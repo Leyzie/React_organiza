@@ -1,0 +1,163 @@
+// width
+=r($width)
+  @media only screen and (max-width: $width+ "px")
+    @content
+=rmin($width)
+  @media only screen and (min-width: $width+ "px")
+    @content
+// gradient
+=g($color1, $color2)
+  background-image: linear-gradient($color1, $color2)
+// font
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900')
+*, html
+  box-sizing: border-box
+html, body
+  font-size: 10px
+body
+  display: block
+  overflow-x: hidden
+  min-width: 320px
+  margin: 0
+  padding: 0
+  outline: 0
+  font-weight: 400
+  font-family: 'Roboto', sans-seri
+  background-color: #efefef
+.App
+  width: 100%
+  overflow: hidden
+.App-logo
+  animation: App-logo-spin infinite 20s linear
+  height: 45px
+.App-header
+  background-color: #282c34
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  border-bottom: 3px solid #e86717
+  box-shadow: 1px 1px 10px #000000
+  margin-bottom: 20px
+  h1
+    font-size: 4rem
+    color: #fff
+    +r(640)
+      font-size: 2rem
+p
+  font-size: 1.6rem
+  font-weight: 500
+  text-align: center
+  span
+      font-size: 2rem
+      margin-right: 10px
+// forms
+.box_forms
+  background-color: #fff
+  padding: 10px
+  display: flex
+  justify-content: center
+  align-items: center
+  form
+    input
+      padding: 5px
+      border-radius: 5px 0 0 5px
+      box-shadow: none
+      border-color: #282c34
+      outline: 0
+      font-weight: 500
+      font-size: 1.6rem
+      transition: all 0.3s ease
+      &:hover, &:focus
+        box-shadow: -2px 0px 10px #e86717
+    button
+      padding: 5px 20px
+      font-size: 1.6rem
+      font-weight: 500
+      border-radius: 0 5px 5px 0px
+      border: 2px solid #282c34
+      border-left: 0
+      background-color: #282c34
+      color: #fff
+      cursor: pointer
+      transition: all 0.3s ease
+      &:hover
+        background-color: #fff
+        color: #282c34
+        box-shadow: 2px 0px 10px #e86717
+// ListItems
+.ListItems
+  max-width: 640px
+  display: block
+  margin: 0 auto
+  background-color: #fff
+  padding: 10px
+.Items
+  background-color: #fff
+  border: 1px solid #282c34
+  margin-bottom: 20px
+  padding: 0 0px
+  &__title
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-size: 2.5rem
+    font-weight: 900
+    margin: 0
+    padding: 0
+    padding: 10px
+    color: #fff
+    background-color: #282c34
+    +r(640)
+      font-size: 2rem
+    button
+      padding: 5px 20px
+      font-size: 1.6rem
+      font-weight: 500
+      border-radius: 5px
+      border: 2px solid #fff
+      border-left: 0
+      background-color: #fff
+      color: #282c34
+      cursor: pointer
+      display: flex
+      align-items: center
+      transition: all 0.3s ease
+      &:before
+        content: '\27A5'
+        margin-right: 10px
+      &:hover
+        background-color: #e86717
+        color: #fff
+        box-shadow: 0px 0px 10px #e86717
+  &__info
+    padding: 10px
+    div
+      font-size: 1.6rem
+      line-height: 1.3
+    .cell
+      margin: 7px 0
+      border-bottom: 1px solid #282c34
+      padding-bottom: 10px
+      strong
+         margin-right: 20px
+         width: 100px
+         display: inline-block
+      .phone
+       
+    .phone_box
+      display: flex
+      align-items: center
+  &__maps
+    margin-top: 10px
+    div
+      width: 100% !important
+.App-link
+  color: #61dafb
+@keyframes App-logo-spin
+  from
+    transform: rotate(0deg)
+  to
+    transform: rotate(360deg)
+  
+
