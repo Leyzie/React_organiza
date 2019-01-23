@@ -43,7 +43,7 @@ class App extends Component {
       });
     } else {
       this.setState({
-        error: 'Введите название организации в форму',
+        error: 'Название организации отсутствует или введено некорректно',
         items: undefined
       });
     }

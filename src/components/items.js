@@ -11,12 +11,14 @@ class Items extends PureComponent {
     const {items , isOpen, onBtnClicl} = this.props
     // массив телефонов
     const phon = items.properties.CompanyMetaData.Phones
-    console.log(items.properties.CompanyMetaData)
-    var Phons = phon.map((phon, index) =>
+    // console.log(items.properties.CompanyMetaData)
+    // console.log(phon)
+    if (phon !== undefined){
+    var Phons = phon.map((phon, index) => 
       <div key = {index}> 
         {phon.formatted}
         </div>
-    )
+    )}
     
     // console.log('---',+isOpen)
 //  кординаты
